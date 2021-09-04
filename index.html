@@ -1,91 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/script.min.js" defer></script>
-    <title>Gulp</title>
-</head>
-
-<body>
-    <div class="navdecor"></div>
-    <header class="header">
-   <div class="header__wrap _container">
-
-      <div class="header__logo">Trevland</div>
-
-      <div class="header__navigation navigation">
-         <ul class="navigation__list">
-            <li class="navigation__link _active">Home</li>
-            <li class="navigation__link">Location</li>
-            <li class="navigation__link">Blog</li>
-            <li class="navigation__link">About</li>
-            <li class="navigation__link">Contact</li>
-         </ul>
-      </div>
-
-      <button class="header__button">Booking now</button>
-
-      <div class="header__burger">
-         <span></span>
-      </div>
-
-   </div>
-</header>
-    <div class="fullscreen">
-   <div class="fullscreen__wrap _container">
-      <img src="./img/fullscreen.jpg" alt="">
-      <img src="./img/filter.png" alt="">
-
-      <div class="fullscreen__label">Railtrips To Here, <br> There And Everywhere!</div>
-
-      <div class="fullscreen__subtitle">We all wish to start our year the best way possible and also according to a
-         common belief if you have a great start to
-         your.</div>
-
-      <button class="fullscreen__button">Explore more</button>
-
-   </div>
-</div>
-    <div class="popular">
-   <div class="popular__wrap _container">
-
-      <h2 class="popular__title">Popular Location</h2>
-
-      <div class="popular__subtitle">For every one of us, travel came first. We’ve spent years living as nomads,
-         pioneers, and voyagers— from island hopping
-         in the</div>
-
-      <div class="popular__image-block image-block">
-         <div class="image-block__item">
-            <img class="image-block__image" src="./img/location1.png" alt="">
-
-            <h4 class="image-block__title">Istanbul, Turkey</h4>
-            <p class="image-block__subtitle">Istanbul is a major city in Turkey that straddles Europe.</p>
-         </div>
-
-         <div class="image-block__item">
-            <img class="image-block__image" src="./img/location2.jpg" alt="">
-
-            <h4 class="image-block__title">Kuala Lumpur, malaysia</h4>
-            <p class="image-block__subtitle">A 272-step long trek leads you to this century.</p>
-         </div>
-
-         <div class="image-block__item">
-            <img class="image-block__image" src="./img/location3.jpg" alt="">
-
-            <h4 class="image-block__title">Seoul, South Korea</h4>
-            <p class="image-block__subtitle">South Korea officially the Republic of Korea is a country in East Asia.</p>
-         </div>
-      </div>
-   </div>
-</div>
-    <footer class="footer">
-    
-</footer>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="css/style.min.css">    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>    <script type="module" src="js/script.min.js" defer></script>    <script type="module" defer>        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'        const swiper = new Swiper('.swiper')    </script>    <title>Gulp</title></head><body>    <div class="navdecor"></div>    <header class="header">   <div class="header__wrap _container">      <div class="header__logo">Trevland</div>      <div class="header__navigation navigation">         <ul class="navigation__list">            <li class="navigation__link _active">Home</li>            <li class="navigation__link">Location</li>            <li class="navigation__link">Blog</li>            <li class="navigation__link">About</li>            <li class="navigation__link">Contact</li>         </ul>      </div>      <button class="header__button">Booking now</button>      <div class="header__burger">         <span></span>      </div>   </div></header>    <div class="fullscreen">   <div class="fullscreen__wrap _container">      <picture><source srcset="./img/fullscreen.webp" type="image/webp"><img src="./img/fullscreen.jpg" alt=""></picture>      <picture><source srcset="./img/filter.webp" type="image/webp"><img src="./img/filter.png" alt=""></picture>      <div class="fullscreen__label">Railtrips To Here, <br> There And Everywhere!</div>      <div class="fullscreen__subtitle">We all wish to start our year the best way possible and also according to a         common belief if you have a great start to         your.</div>      <button class="fullscreen__button">Explore more</button>   </div></div>    <div class="popular">   <div class="popular__wrap _container">      <h2 class="popular__title">Popular Location</h2>      <div class="popular__subtitle">For every one of us, travel came first. We’ve spent years living as nomads,         pioneers, and voyagers— from island hopping         in the</div>      <div class="popular__image-block image-block">         <div class="image-block__item">            <picture><source srcset="./img/location1.webp" type="image/webp"><img class="image-block__image" src="./img/location1.png" alt=""></picture>            <h4 class="image-block__title">Istanbul, Turkey</h4>            <p class="image-block__subtitle">Istanbul is a major city in Turkey that straddles Europe.</p>         </div>         <div class="image-block__item">            <picture><source srcset="./img/location2.webp" type="image/webp"><img class="image-block__image" src="./img/location2.jpg" alt=""></picture>            <h4 class="image-block__title">Kuala Lumpur, malaysia</h4>            <p class="image-block__subtitle">A 272-step long trek leads you to this century.</p>         </div>         <div class="image-block__item">            <picture><source srcset="./img/location3.webp" type="image/webp"><img class="image-block__image" src="./img/location3.jpg" alt=""></picture>            <h4 class="image-block__title">Seoul, South Korea</h4>            <p class="image-block__subtitle">South Korea officially the Republic of Korea is a country in East Asia.</p>         </div>      </div>   </div></div>    <div class="swiper">   <!-- Additional required wrapper -->   <div class="swiper-wrapper">      <!-- Slides -->      <div class="swiper-slide">Slide 1</div>      <div class="swiper-slide">Slide 2</div>      <div class="swiper-slide">Slide 3</div>      ...   </div>   <!-- If we need pagination -->   <div class="swiper-pagination"></div>   <!-- If we need navigation buttons -->   <div class="swiper-button-prev"></div>   <div class="swiper-button-next"></div>   <!-- If we need scrollbar -->   <div class="swiper-scrollbar"></div></div>    <footer class="footer">    </footer></body></html>

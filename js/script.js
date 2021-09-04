@@ -69,6 +69,8 @@ links.forEach(item => {
     })
 })
 
+
+
 function DynamicAdapt(type) {
     this.type = type;
 }
