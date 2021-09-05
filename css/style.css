@@ -2,6 +2,8 @@
 
 /* Указываем box sizing */
 
+@import "../../node_modules/swiper/swiper-bundle.css";
+
 *,
 *::before,
 *::after {
@@ -97,6 +99,7 @@ select {
   src: url("../fonts/Ribeye-Regular.ttf");
 }
 
+.offers__subtitile,
 .image-block__subtitle,
 .popular__subtitle,
 .fullscreen__subtitle,
@@ -117,11 +120,13 @@ select {
   font-size: 65px;
 }
 
+.offers__title,
 .popular__title {
   font-family: "Gelasio";
   font-size: 43px;
 }
 
+.slide__title,
 .image-block__title {
   font-family: "Gelasio";
   font-size: 24px;
@@ -516,9 +521,133 @@ body._lock {
   width: 90%;
 }
 
-.swiper {
-  width: 100%;
-  height: 1100px;
+.offers__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offers__title {
+  text-align: center;
+}
+
+.offers__subtitile {
+  margin-top: 20px;
+  text-align: center;
+  width: 65%;
+  margin-bottom: 40px;
+  font-weight: inherit;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide__img {
+  width: 268px;
+}
+
+.slide__title {
+  width: 268px;
+  font-weight: 500;
+}
+
+.slide__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 268px;
+}
+
+.slide__geo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide__geo img {
+  width: 12px;
+  height: 15px;
+}
+
+.slide__raring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide__ago {
+  width: 268px;
+}
+
+.slide__cost {
+  width: 268px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-button-next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.swiper-scrollbar {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: 5px;
+  margin: 0 20px;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #C9453B;
+}
+
+.block-but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 250px;
+  height: 22px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1157px) {
