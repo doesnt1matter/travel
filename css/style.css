@@ -716,10 +716,10 @@ body._lock {
   font-weight: inherit;
 }
 
-.blog__blog-block:first-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+.blog__blog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 1509px) {
