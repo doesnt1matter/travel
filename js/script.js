@@ -10032,7 +10032,7 @@ const swiper = new Swiper(".swiper", {
     },
     slidesPerView: 5,
     slideToClickedSlide: true,
-    autoHeight: true,
+    loop: true,
     breakpoints: {
         320: {
             slidesPerView: 1
