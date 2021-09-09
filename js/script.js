@@ -10031,7 +10031,6 @@ const swiper = new Swiper(".swiper", {
         draggable: true
     },
     slidesPerView: 5,
-    slideToClickedSlide: true,
     loop: true,
     breakpoints: {
         320: {
