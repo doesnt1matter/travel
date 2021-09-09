@@ -546,9 +546,9 @@ body._lock {
 }
 
 .offers__title {
+  margin-top: 100px;
   text-align: center;
   padding: 0 20px;
-  font-size: 32px;
 }
 
 .offers__subtitile {
@@ -708,7 +708,7 @@ body._lock {
 .blog__title {
   margin-top: 100px;
   text-align: center;
-  font-size: 32px;
+  padding: 0 20px;
 }
 
 .blog__subtitle {
@@ -1039,6 +1039,15 @@ body._lock {
 
 @media (max-width: 429px) {
   .popular__title {
+    font-size: 32px;
+  }
+
+  .offers__title {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .blog__title {
     font-size: 32px;
   }
 }
