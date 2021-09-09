@@ -247,9 +247,9 @@ body._lock {
 
 .header__navigation {
   padding: 30px 0;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   overflow: auto;
 }
 
@@ -264,9 +264,9 @@ body._lock {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header__navigation._active {
@@ -864,6 +864,10 @@ body._lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 50px;
 }
@@ -932,10 +936,19 @@ body._lock {
   color: gray;
 }
 
+.form__title {
+  font-family: "Roboto";
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .form__button {
   color: white;
   width: 100px;
   height: 50px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1509px) {
@@ -1067,6 +1080,67 @@ body._lock {
   }
 }
 
+@media (max-width: 805px) {
+  .footer__main-info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
+  }
+
+  .footer__links {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+  }
+
+  .footer__links {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .footer__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .form__button {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 802px) {
+  .footer_wrap {
+    margin-top: 30px;
+  }
+
+  .footer__main-info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .main-info__contact {
+    margin: 40px 0;
+  }
+
+  .main-info__links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 60px;
+  }
+
+  .links__item {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 767px) {
   .fullscreen__label {
     font-size: calc(35px + (25 + 25 * 0.7) * ((100vw - 320px) / 1140));
@@ -1116,12 +1190,6 @@ body._lock {
   .right-side__img img {
     width: 300px;
     height: 190px;
-  }
-}
-
-@media (max-width: 569px) {
-  .header__button {
-    display: none;
   }
 }
 
