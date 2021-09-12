@@ -10304,3 +10304,35 @@ if (navLinks.length > 0) {
         })
     })
 }
+
+
+const popup = document.querySelector(".popup")
+const button1 = document.querySelector(".fullscreen__button")
+const button2 = document.querySelector(".header__button")
+const closePopup = document.querySelector(".popup__close")
+button1.addEventListener("click", () => {
+    popup.classList.add("_active")
+    if (!document.body.classList.contains("_lock")) {
+        document.body.classList.add("_lock")
+    }
+})
+button2.addEventListener("click", () => {
+    popup.classList.add("_active")
+    if (!document.body.classList.contains("_lock")) {
+        document.body.classList.add("_lock")
+    }
+})
+closePopup.addEventListener("click", () => {
+    popup.classList.remove("_active")
+    if (document.body.classList.contains("_lock")) {
+        document.body.classList.remove("_lock")
+    }
+})
+
+const popularItem = document.querySelectorAll(".image-block__item")
+popularItem.forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("_active")
+        document.body.classList.toggle("_lock")
+    })
+})
