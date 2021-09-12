@@ -10276,3 +10276,31 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
+
+const navLinks = document.querySelectorAll(".navigation__link[data-goto]")
+if (navLinks.length > 0) {
+    navLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+
+            const navLink = event.target
+            if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
+                const gotoBlock = document.querySelector(navLink.dataset.goto)
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector(".header").offsetHeight
+
+                if (burger.classList.contains("_active")) {
+                    document.body.classList.remove("_lock")
+                    navbar.classList.remove("_active")
+                    burger.classList.remove("_active")
+                    burger.classList.remove("_black")
+                    logo.classList.remove("_black")
+                }
+
+                window.scrollTo({
+                    top: gotoBlockValue,
+                    behavior: "smooth"
+                })
+                event.preventDefault()
+            }
+        })
+    })
+}
