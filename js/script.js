@@ -10324,7 +10324,10 @@ button2.addEventListener("click", () => {
 })
 closePopup.addEventListener("click", () => {
     popup.classList.remove("_active")
-    if (document.body.classList.contains("_lock")) {
+    if (!document.body.classList.contains("_lock")) {
+        document.body.classList.add("_lock")
+    }
+    if (document.body.classList.contains("_lock") && !navbar.classList.contains("_active")) {
         document.body.classList.remove("_lock")
     }
 })
@@ -10333,6 +10336,11 @@ const popularItem = document.querySelectorAll(".image-block__item")
 popularItem.forEach(item => {
     item.addEventListener("click", () => {
         item.classList.toggle("_active")
-        document.body.classList.toggle("_lock")
+        if (!document.body.classList.contains("_lock")) {
+            document.body.classList.add("_lock")
+        }
+        if (document.body.classList.contains("_lock")) {
+            document.body.classList.remove("_lock")
+        }
     })
 })
