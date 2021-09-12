@@ -10336,11 +10336,6 @@ const popularItem = document.querySelectorAll(".image-block__item")
 popularItem.forEach(item => {
     item.addEventListener("click", () => {
         item.classList.toggle("_active")
-        if (!document.body.classList.contains("_lock")) {
-            document.body.classList.add("_lock")
-        }
-        if (document.body.classList.contains("_lock")) {
-            document.body.classList.remove("_lock")
-        }
+        document.body.classList.toggle("_lock")
     })
 })
